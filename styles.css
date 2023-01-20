@@ -1,0 +1,136 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+}
+.navbar{
+    background-color:rgb(219, 38, 63);
+    display: flex;
+    flex-direction: row-reverse;
+    position: fixed;
+    width:100%;
+}
+.navbar ul{
+    overflow: auto;
+}
+.navbar li{
+    float: left;
+    list-style: none;
+    padding: 3px 3px;
+    margin: 15px 15px;
+
+}
+.navbar li a{
+    padding: 3px 3px;
+    text-decoration: none;
+    font-family: 'poppins' , san-serif ;
+    color: wheat;
+    font-size: larger;
+    font-weight: 700;
+}
+.navbar a:hover{
+background-color: rgb(87,89,135);
+color: white;
+text-decoration: none;
+}
+.maincontainer {
+    background-color: rgb(37, 34, 34);
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'poppins' , sans-serif ;
+}
+.maincontainer h1{
+    font-size: 3rem;
+  
+    color: white;
+    font-family: 'raleway', sans-serif;
+    font-weight: 500;
+}
+.maincontainer p{
+    color: rgb(173, 44, 65);
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 200;
+    line-height: 1.4;
+}
+/*.flexcontainer{
+   display: flex;
+   flex-basis: 15;
+}
+.flexcontainer2{
+    display: flex;
+    flex-basis: 85;
+}*/
+.maincontainer2{
+    background-color: blueviolet;
+    
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.heading{
+    text-align: center;
+    border-bottom: 3px solid white;
+    color: white;
+    margin-top: 10px;
+
+}
+.maincontainer3{
+    background-color: rgb(113, 113, 216);
+    height: 100vh;
+    
+
+}
+.gridcontainer{
+    height: 100vh;
+    gap:30px;
+    box-sizing: border-box;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 'box1 box2 box3'
+    'box4 box5 box6';
+}
+.item1
+{
+     border: radius 20px;;
+    grid-area: box1;
+    background-color: purple;
+}
+
+.item2{
+    border-radius: 10px;
+    grid-area: box2;
+    background-color: rgb(89, 89, 233);
+    color: white;
+}
+.item3{
+    border-radius: 10px;
+    grid-area: box3;
+    background-color: white;
+}
+.item4{
+    border-radius: 10px;
+    grid-area: box5;
+    background-color: white;
+
+}
+.item5{
+    border-radius: 10px;
+    grid-area: box6;
+    background-color: rgb(54, 54, 124);
+    color: white;
+
+}

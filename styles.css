@@ -70,12 +70,10 @@ text-decoration: none;
 }*/
 .maincontainer2{
     background-color: blueviolet;
-    
-    align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
+    justify-content: center;
 }
 .heading{
     text-align: center;
@@ -85,52 +83,132 @@ text-decoration: none;
 
 }
 .maincontainer3{
-    background-color: rgb(113, 113, 216);
+    background-color:rgb(88, 79, 79);
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    
+    
     
 
 }
+.item img{
+    width: 340px;
+    height: 340px;
+    object-fit: cover;
+}
 .gridcontainer{
-    height: 100vh;
-    gap:30px;
-    box-sizing: border-box;
-    padding: 50px;
-    display: flex;
-    flex-wrap: wrap;
+   
     display: grid;
-    grid-template-rows: 1fr 1fr ;
-    grid-template-columns: 1fr 1fr 1fr;
+    /*grid-template-rows: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;*/
     grid-template-areas: 'box1 box2 box3'
     'box4 box5 box6';
+    justify-items: center;
+    align-items: space-between;
+    margin: 10%;
+    column-gap: 30px;
+    row-gap: 30px;
+
+
+}
+
+.item img{
+    height: 100%;
+}
+.item{
+
+    align-items: center;
+    margin: 20px;
+
 }
 .item1
 {
-     border: radius 20px;;
+    
+    
+    /* border: radius 20px; */
     grid-area: box1;
     background-color: purple;
+}
+.text{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    font-weight: 300;
+}
+.text1{
+    color: white;
+    font-size:large ;
+    background-color: rgb(84, 84, 151);
+    
 }
 
 .item2{
     border-radius: 10px;
     grid-area: box2;
     background-color: rgb(89, 89, 233);
-    color: white;
 }
+.text2{
+    color: white;
+    font-size:large ;
+    background-color: rgb(84, 84, 151);
+    
+}
+
 .item3{
     border-radius: 10px;
     grid-area: box3;
     background-color: white;
 }
+.text3{
+    color: white;
+    font-size:large ;
+    background-color: rgb(84, 84, 151);
+    
+}
+
 .item4{
     border-radius: 10px;
-    grid-area: box5;
+    grid-area: box4;
     background-color: white;
 
 }
+.text4{
+    color: white;
+    font-size:large ;
+    background-color: rgb(84, 84, 151);
+    
+}
+
 .item5{
+    border-radius: 10px;
+    grid-area: box5;
+    background-color: rgb(54, 54, 124);
+
+}
+.text5{
+    color: white;
+    font-size:large ;
+    background-color: rgb(84, 84, 151);
+    
+}
+
+.item6{
     border-radius: 10px;
     grid-area: box6;
     background-color: rgb(54, 54, 124);
-    color: white;
+
 
 }
+.text6{
+    color: white;
+    font-size:large ;
+    background-color: rgb(84, 84, 151);
+    
+}
+.addbutton{
+   margin-top: 4rem;
+  }
